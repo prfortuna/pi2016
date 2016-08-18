@@ -1,8 +1,7 @@
-<?php 
+<?php
 include("./cabecalho.php");
 include("./banco/BDConecta.php");
 include("./banco/BDCidade.php");
-
 ?>
 
 <table class="tabelaEsquerda">
@@ -21,28 +20,21 @@ include("./banco/BDCidade.php");
 
 <table class="table table-striped table-bordered">
     <tr>
-        <th>
-            ID 
-        </th>
-
-        <th>
-             Cidade
-        </th>
-
+        <th>ID </th>
+        <th>Cidade</th>
         <th> UF </th>
-
-        <th> </th>
-
-        <th> </th>
+        <th> CEP</th>
     </tr>
+    
     <?php
     $cidades = listaCidades($conexao);
-    foreach( $cidades as $cidade ){
-    ?>    
+    foreach ($cidades as $cidade) {
+        ?>    
         <tr>
             <td> <?= $cidade['id'] ?> </td>
             <td> <?= $cidade['nome'] ?> </td>
             <td> <?= $cidade['uf'] ?> </td>
+            <td> <?= $cidade['cep'] ?> </td>
 
             <td>
                 <form name="Excluir" action="DeletaCidade.php" method="POST">
@@ -51,7 +43,7 @@ include("./banco/BDCidade.php");
                 </form>
             </td>
         </tr>
-    <?php    
+        <?php
     }
     ?>
 </table>

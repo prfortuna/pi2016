@@ -20,46 +20,34 @@ include("./banco/BDMaquina.php");
 
 <table class="table table-striped table-bordered">
     <tr>
-        <th>
-            ID
-        </th>
+        <th>ID</th>
 
-        <th>
-            MARCA
-        </th>
+        <th>MARCA</th>
 
-        <th>
-            MODELO
-        </th>
+        <th>MODELO</th>
 
-        <th>
-            ANO
-        </th>
+        <th>ANO</th>
 
-        <th>
-            COR
-        </th>
-        
-        <th>
-            SÉRIE
-        </th>
-        
+        <th>COR</th>
+
+        <th>SÉRIE</th>
+
         <th>
             NÚMERO DO MOTOR
         </th>
-        
+
         <th>
             CUSTO
         </th>
-        
+
         <th>
             VALOR
         </th>
-        
+
         <th>
             STATUS
         </th>
-        
+
         <th>
             CLIENTE
         </th>
@@ -82,18 +70,18 @@ include("./banco/BDMaquina.php");
             <td> <?= $maquina['status'] ?> </td>
             <td> <?= $maquina['id_cliente'] ?> </td>
 
-<!--            <td>
-                <form action="FormAlteraCliente.php" method="POST">
-                    <input type="hidden" name="id" value="<?= $cliente['id'] ?>">
-                    <input type="submit" value="Ver" alt="Submit" width="24" height="24" title="Detalhar">
-                </form>
-            </td>
-            <td>
-                <form action="DeletaCliente.php" method="POST">
-                    <input type="hidden" name="id" value="<?= $cliente['id'] ?>">
-                    <input type="submit" value="Excluir" alt="Submit" width="24" height="24" title="Excluir">
-                </form>
-            </td>-->
+        <!--            <td>
+                        <form action="FormAlteraCliente.php" method="POST">
+                            <input type="hidden" name="id" value="<?= $cliente['id'] ?>">
+                            <input type="submit" value="Ver" alt="Submit" width="24" height="24" title="Detalhar">
+                        </form>
+                    </td>
+                    <td>
+                        <form action="DeletaCliente.php" method="POST">
+                            <input type="hidden" name="id" value="<?= $cliente['id'] ?>">
+                            <input type="submit" value="Excluir" alt="Submit" width="24" height="24" title="Excluir">
+                        </form>
+                    </td>-->
         </tr>
         <?php
     }

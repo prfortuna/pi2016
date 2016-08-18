@@ -19,28 +19,12 @@ include("./banco/BDCliente.php");
 
 <table class="table table-striped table-bordered">
     <tr>
-        <th>
-            ID
-        </th>
-
-        <th>
-            NOME
-        </th>
-
-        <th>
-            TELEFONE
-        </th>
-
-        <th>
-            E-MAIL
-        </th>
-
-        <th>
-            CIDADE
-        </th>
-
-        <th> </th>
-
+        <th>ID</th>
+        <th>NOME</th>
+        <th>TELEFONE</th>
+        <th>CIDADE</th>
+        <th>CELULAR</th>
+        <th>E-MAIL</th>
         <th> </th>
     </tr>
     <?php
