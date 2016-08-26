@@ -3,7 +3,7 @@ include ("./cabecalho.php");
 include("./banco/BDConecta.php");
 include("./banco/BDCliente.php");
 ?>
-
+<br>
 <table class="tabelaEsquerda">
     <tr>
         <td>

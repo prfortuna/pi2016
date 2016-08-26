@@ -3,13 +3,13 @@ include("./cabecalho.php");
 include("./banco/BDConecta.php");
 include("./banco/BDCidade.php");
 ?>
-
+<br>
 <table class="tabelaEsquerda">
     <tr>
         <td>
             <form name="inserir" action="FormCadastraCidade.php" method="POST">
                 <input type="hidden" name="id" value="">
-                <input type="submit" alt="Submit" width="48" height="48" title="Inserir nova Cidade" value="Inserir nova Cidade">
+                <input class="btn btn-default" type="submit" alt="Submit" width="48" height="48" title="Inserir nova Cidade" value="Inserir nova Cidade">
             </form>
         </td>
         <td>

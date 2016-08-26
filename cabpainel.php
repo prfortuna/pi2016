@@ -30,7 +30,6 @@
     </head>
 
     <body>
-
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
@@ -46,25 +45,36 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">     
+                    <ul class="nav navbar-nav navbar-right">                          
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Maquinas <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastrar <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="ListaCidade.php">Tratores</a>
+                                    <a href="ListaCidade.php">Cidades</a>
                                 </li>
                                 <li>
-                                    <a href="ListaCliente.php">Implementos</a>
+                                    <a href="ListaCliente.php">Clientes</a>
                                 </li>
                                 <li>
-                                    <a href="ListaMaquina.php">Acessorios</a>
+                                    <a href="ListaMaquina.php">Máquinas</a>
+                                </li>
+                                <li>
+                                    <a href="ListaPecas.php">Peças</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio-item.html">Safras</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li>
+                            <a href="about.html">Pedido</a>
+                        </li>
+                        
+                        <li>
                             <a href="login2.php">Login</a>
                         </li>
+                        
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
