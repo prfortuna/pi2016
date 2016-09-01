@@ -1,5 +1,5 @@
 <?php
-include ("./cabecalho.php");
+include ("./cabpainel.php");
 include("./banco/BDConecta.php");
 include("./banco/BDCliente.php");
 ?>
@@ -9,7 +9,7 @@ include("./banco/BDCliente.php");
         <td>
             <form name="inserir" action="FormCadastraCliente.php" method="POST">
                 <input type="hidden" name="id" value="">
-                <input type="submit" alt="Submit" width="48" height="48" title="Inserir nova Cidade" value="Inserir novo Cliente">
+                <input class="btn btn-default" type="submit" alt="Submit" width="48" height="48" title="Inserir nova Cidade" value="Inserir novo Cliente">
             </form>
         </td>
         <td>
@@ -48,7 +48,7 @@ include("./banco/BDCliente.php");
             <td>
                 <form action="DeletaCliente.php" method="POST">
                     <input type="hidden" name="id" value="<?= $cliente['id'] ?>">
-                    <input type="submit" value="Excluir" alt="Submit" width="24" height="24" title="Excluir">
+                    <input class="btn btn-warning" type="submit" value="Excluir" alt="Submit" width="24" height="24" title="Excluir">
                 </form>
             </td>
         </tr>

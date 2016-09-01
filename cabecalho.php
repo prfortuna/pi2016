@@ -61,7 +61,9 @@
                                 </li>
                             </ul>
                         </li>
-
+                        <li>
+                            <a href="painel.php">Painel ADM</a>
+                        </li>
                         <li>
                             <a href="login2.php">Login</a>
                         </li>

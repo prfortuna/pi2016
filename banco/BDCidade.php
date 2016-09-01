@@ -1,8 +1,8 @@
 <?php
 
 // INSERIR:
-function inserirCidade( $conexao, $nome, $uf, $cep ) {
-    $query = "insert into cidades (nome, uf, cep) values ('{$nome}','{$uf}','{$cep}')";
+function inserirCidade( $conexao, $nome, $uf ) {
+    $query = "insert into cidades (nome, uf) values ('{$nome}','{$uf}')";
     return mysqli_query($conexao, $query);
 }
 

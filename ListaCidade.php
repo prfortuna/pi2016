@@ -1,5 +1,5 @@
 <?php
-include("./cabecalho.php");
+include("./cabpainel.php");
 include("./banco/BDConecta.php");
 include("./banco/BDCidade.php");
 ?>
@@ -23,7 +23,7 @@ include("./banco/BDCidade.php");
         <th>ID </th>
         <th>Cidade</th>
         <th> UF </th>
-        <th> CEP</th>
+        <th></th>
     </tr>
     
     <?php
@@ -34,12 +34,11 @@ include("./banco/BDCidade.php");
             <td> <?= $cidade['id'] ?> </td>
             <td> <?= $cidade['nome'] ?> </td>
             <td> <?= $cidade['uf'] ?> </td>
-            <td> <?= $cidade['cep'] ?> </td>
 
             <td>
                 <form name="Excluir" action="DeletaCidade.php" method="POST">
                     <input type="hidden" name="id" value="<?= $cidade['id'] ?>">
-                    <input type="submit" width="48" height="48" title="Excluir" value="Excluir">
+                    <input class="btn btn-warning" type="submit" width="48" height="48" title="Excluir" value="Excluir">
                 </form>
             </td>
         </tr>

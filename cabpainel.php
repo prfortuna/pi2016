@@ -62,19 +62,22 @@
                                     <a href="ListaPecas.php">Peças</a>
                                 </li>
                                 <li>
-                                    <a href="portfolio-item.html">Safras</a>
+                                    <a href="conteudo/portfolio-item.html">Safras</a>
+                                </li>
+                                <li>
+                                    <a href="conteudo/portfolio-item.html">Aluguel</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="about.html">Pedido</a>
+                            <a href="conteudo/about.html">Pedido</a>
                         </li>
-                        
+
                         <li>
                             <a href="login2.php">Login</a>
                         </li>
-                        
+
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

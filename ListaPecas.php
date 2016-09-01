@@ -1,15 +1,15 @@
 <?php
-include ("./cabecalho.php");
+include ("./cabpainel.php");
 include("./banco/BDConecta.php");
 include("./banco/BDPecas.php");
 ?>
-
+<br>
 <table class="tabelaEsquerda">
     <tr>
         <td>
             <form name="inserir" action="FormCadastraPecas.php" method="POST">
                 <input type="hidden" name="id" value="">
-                <input type="submit" alt="Submit" width="48" height="48" title="Inserir nova Peca" value="Inserir nova Peca">
+                <input class="btn btn-default" type="submit" alt="Submit" width="48" height="48" title="Inserir nova Peça" value="Inserir nova Peça">
             </form>
         </td>
         <td>

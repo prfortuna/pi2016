@@ -1,16 +1,16 @@
 <?php
-include ("./cabecalho.php");
+include ("./cabpainel.php");
 include("./banco/BDConecta.php");
 include("./banco/BDCliente.php");
 include("./banco/BDMaquina.php");
 ?>
-
+<br>
 <table class="tabelaEsquerda">
     <tr>
         <td>
             <form name="inserir" action="FormCadastraMaquina.php" method="POST">
                 <input type="hidden" name="id" value="">
-                <input type="submit" alt="Submit" width="48" height="48" title="Inserir nova Máquina" value="Inserir nova Máquina">
+                <input class="btn btn-default" type="submit" alt="Submit" width="48" height="48" title="Inserir nova Máquina" value="Inserir nova Máquina">
             </form>
         </td>
         <td>
@@ -68,7 +68,7 @@ include("./banco/BDMaquina.php");
             <td> <?= $maquina['custo'] ?> </td>
             <td> <?= $maquina['valor'] ?> </td>
             <td> <?= $maquina['status'] ?> </td>
-            <td> <?= $maquina['id_cliente'] ?> </td>
+            <td> <?= $maquina['cliente'] ?> </td>
 
         <!--            <td>
                         <form action="FormAlteraCliente.php" method="POST">

@@ -43,10 +43,6 @@ include("./banco/BDConecta.php");
                         </select></td>
                 </tr>
                 <tr>
-                    <td>CEP:</td>
-                    <td><input class="form-control" type="text" name="cep" required="required" value="" > </td>
-                </tr>
-                <tr>
                     <td></td>
                     <td> <input class="btn btn-primary" type="submit" value="Cadastrar"> </td>
                 </tr>

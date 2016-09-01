@@ -5,12 +5,11 @@ include("./banco/BDCidade.php");
 
 $nome = $_POST["nome"];
 $uf = $_POST["uf"];
-$cep = $_POST["cep"];
 
 
-if ( inserirCidade($conexao, $nome, $uf, $cep) ) {
+if ( inserirCidade($conexao, $nome, $uf) ) {
     ?>
-    <p class="text-success">Cidade <?= $nome ?> - <?= $uf ?> - <?= $cep ?> , cadastrada com sucesso.</p>
+    <p class="text-success">Cidade <?= $nome ?> - <?= $uf ?>, cadastrada com sucesso.</p>
     <?php 
 } else { 
     $msg = mysqli_error( $conexao );
