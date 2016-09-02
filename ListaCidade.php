@@ -20,12 +20,13 @@ include("./banco/BDCidade.php");
 
 <table class="table table-striped table-bordered">
     <tr>
-        <th>ID </th>
+        <th>ID</th>
         <th>Cidade</th>
-        <th> UF </th>
+        <th>UF</th>
+        <th></th>
         <th></th>
     </tr>
-    
+
     <?php
     $cidades = listaCidades($conexao);
     foreach ($cidades as $cidade) {
@@ -36,9 +37,16 @@ include("./banco/BDCidade.php");
             <td> <?= $cidade['uf'] ?> </td>
 
             <td>
+                <form action="FormAlteraCidade.php" method="POST">
+                    <input type="hidden" name="id" value="<?= $cidade['id'] ?>">
+                    <input class="btn btn-success" type="submit" value="Ver" alt="Submit" width="24" height="24" title="Detalhar">
+                </form>
+            </td>
+            <td>
                 <form name="Excluir" action="DeletaCidade.php" method="POST">
                     <input type="hidden" name="id" value="<?= $cidade['id'] ?>">
-                    <input class="btn btn-warning" type="submit" width="48" height="48" title="Excluir" value="Excluir">
+                    <!--<input class="btn btn-warning" type="submit" width="48" height="48" title="Excluir" value="Excluir"> -->
+                    <button type="submit" class="btn btn-warning" onclick="redirecionar();">Excluir</button>
                 </form>
             </td>
         </tr>

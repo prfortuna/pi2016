@@ -62,6 +62,9 @@
                             </ul>
                         </li>
                         <li>
+                            <a href="sobre.php">Sobre</a>
+                        </li>
+                        <li>
                             <a href="painel.php">Painel ADM</a>
                         </li>
                         <li>

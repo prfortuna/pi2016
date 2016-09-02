@@ -27,6 +27,14 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
+        <script type="text/javascript">
+            function redirecionar() {
+                if (confirm("Deseja excluir?")) {
+                    window.location = "http://localhost/pi2016/ListaCidade";
+                }
+            }
+        </script>
+        
     </head>
 
     <body>

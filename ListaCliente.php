@@ -26,6 +26,7 @@ include("./banco/BDCliente.php");
         <th>CELULAR</th>
         <th>E-MAIL</th>
         <th> </th>
+        <th> </th>
     </tr>
     <?php
     $clientes = listaClientes($conexao);
@@ -42,7 +43,7 @@ include("./banco/BDCliente.php");
             <td>
                 <form action="FormAlteraCliente.php" method="POST">
                     <input type="hidden" name="id" value="<?= $cliente['id'] ?>">
-                    <input type="submit" value="Ver" alt="Submit" width="24" height="24" title="Detalhar">
+                    <input class="btn btn-success" type="submit" value="Ver" alt="Submit" width="24" height="24" title="Detalhar">
                 </form>
             </td>
             <td>
